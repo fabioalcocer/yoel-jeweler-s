@@ -1,6 +1,7 @@
 import { AppContext } from '@/Context.jsx'
 import { useContext, useEffect } from 'react'
-import { BiCart, BiMoon, BiSun } from 'react-icons/bi'
+import { BiMoon, BiSun } from 'react-icons/bi'
+import { BsBag } from 'react-icons/bs'
 
 import useLocalStorage from '../../hooks/useLocalStorage'
 import SearchBar from './SearchBar.jsx'
@@ -34,9 +35,9 @@ function Navbar () {
               )}
         </div>
         <div>
-          <BiCart
+          <BsBag
             onClick={() => setOpen(true)}
-            className='transition-colors: cursor-pointer text-3xl  duration-300 hover:text-amber-500 lg:text-4xl'
+            className='transition-colors: cursor-pointer text-3xl  duration-300 hover:text-amber-500 lg:text-2xl'
           />
           <p className='absolute right-0 -mt-9 -mr-2 h-5 w-5 rounded-[50%] bg-red-500 text-center text-sm font-bold text-white '>
             {count}

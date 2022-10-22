@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Cinzel Decorative, sans-serif']
+      },
       animation: {
         'bounce-slow': 'bounce 2s linear infinite'
       }
